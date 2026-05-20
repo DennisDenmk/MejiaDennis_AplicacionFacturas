@@ -56,29 +56,29 @@ A continuación, se presentan las secciones correspondientes para documentar vis
 ### Create (Crear Factura)
 *Descripción del flujo:* Entre al detalle de una persona pulsando **`Ver Facturas`**. Luego, haga clic en el botón verde **`+ Agregar Factura`**, introduzca los datos requeridos (número de factura y monto son obligatorios) y presione **`Guardar`**.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla de creación de factura -->
-![Crear Factura](https://placehold.co/800x450/10b981/ffffff?text=Captura+Crear+Factura)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 44 53 PM" src="https://github.com/user-attachments/assets/61cb4605-050b-4719-8195-a95187c5647e" />
+
 
 ---
 
 ### Read (Leer / Listar Facturas de Persona)
 *Descripción del flujo:* Dentro de la pantalla de detalle de cada persona, se visualiza la lista de sus facturas registradas en un formato claro que detalla el número, concepto, fecha formateada y el monto de cada transacción en color verde.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla del listado de facturas -->
-![Listar Facturas](https://placehold.co/800x450/10b981/ffffff?text=Captura+Listado+Facturas)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 44 53 PM (1)" src="https://github.com/user-attachments/assets/6a6cc21f-ab79-4823-b002-378811b547e9" />
 
 ---
 
 ### Update (Actualizar Factura)
 *Descripción del flujo:* En la lista de facturas de una persona, pulse el botón azul **`Editar`** correspondiente a la factura que desea modificar, realice los cambios necesarios y presione **`Guardar`**.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla de edición de factura -->
-![Editar Factura](https://placehold.co/800x450/10b981/ffffff?text=Captura+Editar+Factura)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 44 53 PM (2)" src="https://github.com/user-attachments/assets/30c192be-f449-497e-8ae9-053e82bf1f5e" />
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 44 53 PM (3)" src="https://github.com/user-attachments/assets/ef1fc03f-7805-4ae9-b98b-7b0c848d6a9c" />
+
 
 ---
 
 ### Delete (Eliminar Factura)
 *Descripción del flujo:* Pulse el botón rojo **`Eliminar`** en la factura seleccionada. Al confirmar la acción en el cuadro de diálogo, la factura se borrará de forma definitiva de la base de datos sin afectar a la persona ni a otras facturas.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla de eliminación de factura -->
-![Eliminar Factura](https://placehold.co/800x450/10b981/ffffff?text=Captura+Eliminar+Factura)
+<img img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 44 53 PM (4)" src="https://github.com/user-attachments/assets/ffd62ed5-9be6-49a7-bb02-fd70fd861037" />
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 44 52 PM" src="https://github.com/user-attachments/assets/9f75c351-b24b-4eec-9be1-a7cda5fca76c" />
