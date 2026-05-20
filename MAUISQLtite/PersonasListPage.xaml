@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MAUISQLtite"
+             x:Class="MAUISQLtite.PersonasListPage"
+             Title="Lista de Personas"
+             BackgroundColor="{AppThemeBinding Light=#F8F9FA, Dark=#121212}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Clicked="OnAddPersonaClicked" Priority="0" Order="Primary" />
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto, *">
+        <!-- Search bar -->
+        <SearchBar x:Name="PersonaSearchBar"
+                   Grid.Row="0"
+                   Placeholder="Buscar persona por nombre..."
+                   TextChanged="OnSearchTextChanged"
+                   Margin="10,5,10,5"
+                   HeightRequest="50" />
+
+        <!-- List of Personas -->
+        <CollectionView x:Name="PersonasCollectionView"
+                        Grid.Row="1"
+                        SelectionMode="None"
+                        Margin="10,0,10,0">
+            <CollectionView.EmptyView>
+                <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" Padding="30">
+                    <Label Text="No se encontraron personas"
+                           FontSize="18"
+                           FontAttributes="Italic"
+                           HorizontalOptions="Center"
+                           TextColor="Gray" />
+                    <Button Text="Agregar Nueva Persona"
+                            Clicked="OnAddPersonaClicked"
+                            HorizontalOptions="Center"
+                            BackgroundColor="#512BD4"
+                            TextColor="White"
+                            CornerRadius="8" />
+                </VerticalStackLayout>
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:Persona">
+                    <Border StrokeShape="RoundRectangle 8"
+                            StrokeThickness="1"
+                            Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#2C2C2C}"
+                            BackgroundColor="{AppThemeBinding Light=White, Dark=#1E1E1E}"
+                            Margin="0,0,0,10"
+                            Padding="15">
+                        
+                        <Grid ColumnDefinitions="*, Auto">
+                            <VerticalStackLayout Grid.Column="0" Spacing="4">
+                                <Label Text="{Binding Nombre}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+                                <Label Text="{Binding Email}"
+                                       FontSize="14"
+                                       TextColor="Gray" />
+                                <Label Text="{Binding Telefono}"
+                                       FontSize="14"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                            
+                            <HorizontalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="10">
+                                <Button Text="Ver Facturas"
+                                        Clicked="OnVerFacturasClicked"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#4CAF50"
+                                        TextColor="White"
+                                        HeightRequest="36"
+                                        Padding="10,0"
+                                        CornerRadius="5" />
+                                <Button Text="Editar"
+                                        Clicked="OnEditPersonaClicked"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#2196F3"
+                                        TextColor="White"
+                                        HeightRequest="36"
+                                        Padding="10,0"
+                                        CornerRadius="5" />
+                                <Button Text="Eliminar"
+                                        Clicked="OnDeletePersonaClicked"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#F44336"
+                                        TextColor="White"
+                                        HeightRequest="36"
+                                        Padding="10,0"
+                                        CornerRadius="5" />
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

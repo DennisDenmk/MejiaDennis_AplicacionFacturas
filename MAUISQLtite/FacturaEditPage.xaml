@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUISQLtite.FacturaEditPage"
+             Title="Formulario de Factura"
+             BackgroundColor="{AppThemeBinding Light=#F8F9FA, Dark=#121212}">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20" VerticalOptions="Start">
+            <Label x:Name="PageTitleLabel" 
+                   Text="Nueva Factura" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+                   Margin="0,0,0,10" />
+
+            <!-- Número de Factura -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Número de Factura *" 
+                       FontSize="14" 
+                       FontAttributes="Bold" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+                <Entry x:Name="NumeroFacturaEntry" 
+                       Placeholder="Ej. FAC-001" 
+                       BackgroundColor="{AppThemeBinding Light=White, Dark=#1E1E1E}" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+                       HeightRequest="45" />
+            </VerticalStackLayout>
+
+            <!-- Concepto -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Concepto" 
+                       FontSize="14" 
+                       FontAttributes="Bold" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+                <Entry x:Name="ConceptoEntry" 
+                       Placeholder="Ej. Servicio de consultoría" 
+                       BackgroundColor="{AppThemeBinding Light=White, Dark=#1E1E1E}" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+                       HeightRequest="45" />
+            </VerticalStackLayout>
+
+            <!-- Monto -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Monto ($) *" 
+                       FontSize="14" 
+                       FontAttributes="Bold" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+                <Entry x:Name="MontoEntry" 
+                       Placeholder="Ej. 1500.00" 
+                       Keyboard="Numeric"
+                       BackgroundColor="{AppThemeBinding Light=White, Dark=#1E1E1E}" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+                       HeightRequest="45" />
+            </VerticalStackLayout>
+
+            <!-- Fecha -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Fecha de Emisión *" 
+                       FontSize="14" 
+                       FontAttributes="Bold" 
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+                <DatePicker x:Name="FechaDatePicker" 
+                            BackgroundColor="{AppThemeBinding Light=White, Dark=#1E1E1E}" 
+                            TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+                            HeightRequest="45" />
+            </VerticalStackLayout>
+
+            <!-- Botones -->
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="15" Margin="0,20,0,0">
+                <Button Grid.Column="0" 
+                        Text="Cancelar" 
+                        Clicked="OnCancelClicked" 
+                        BackgroundColor="Gray" 
+                        TextColor="White" 
+                        HeightRequest="45" 
+                        CornerRadius="8" />
+                <Button Grid.Column="1" 
+                        Text="Guardar" 
+                        Clicked="OnSaveClicked" 
+                        BackgroundColor="#512BD4" 
+                        TextColor="White" 
+                        HeightRequest="45" 
+                        CornerRadius="8" />
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
