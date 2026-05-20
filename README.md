@@ -22,32 +22,31 @@ A continuación, se presentan las secciones correspondientes para documentar vis
 ### Create (Crear Persona)
 *Descripción del flujo:* Presione el botón **`Agregar`** en la parte superior derecha de la pantalla principal o el botón **`Agregar Nueva Persona`** si la lista está vacía, complete el nombre (campo obligatorio), correo electrónico, teléfono y presione **`Guardar`**.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla de creación de persona -->
-![Crear Persona](https://placehold.co/800x450/4f46e5/ffffff?text=Captura+Crear+Persona)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 35 25 PM" src="https://github.com/user-attachments/assets/104f2c2d-ec41-44bb-ac06-35319b05823a" />
 
 ---
 
 ### Read (Leer / Listar Personas)
 *Descripción del flujo:* Muestra la lista de todas las personas registradas en tarjetas individuales. Incluye una barra de búsqueda para filtrar la lista instantáneamente por nombre.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla del listado de personas -->
-![Listado de Personas](https://placehold.co/800x450/4f46e5/ffffff?text=Captura+Listado+Personas)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 35 25 PM (1)" src="https://github.com/user-attachments/assets/afce96c5-2490-4399-8c4f-02b4b001a9f5" />
+
 
 ---
 
 ### Update (Actualizar Persona)
 *Descripción del flujo:* Presione el botón azul **`Editar`** en la tarjeta de la persona que desea modificar. Se abrirá el formulario cargado con los datos actuales; modifique la información requerida y presione **`Guardar`**.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla de edición de persona -->
-![Editar Persona](https://placehold.co/800x450/4f46e5/ffffff?text=Captura+Editar+Persona)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 35 25 PM (2)" src="https://github.com/user-attachments/assets/7e5b243c-cb14-455a-b117-478082b71bd5" />
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 35 25 PM (3)" src="https://github.com/user-attachments/assets/74879d71-54df-46fc-b105-33c5f05cf83e" />
 
 ---
 
 ### Delete (Eliminar Persona)
 *Descripción del flujo:* Presione el botón rojo **`Eliminar`** en la tarjeta de la persona. Se le mostrará un cuadro de diálogo de confirmación. Al pulsar "Sí", el registro y todas sus facturas asociadas se eliminarán por completo.
 
-<!-- Reemplaza el enlace a continuación por tu captura de pantalla de eliminación de persona -->
-![Eliminar Persona](https://placehold.co/800x450/4f46e5/ffffff?text=Captura+Eliminar+Persona)
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 35 24 PM" src="https://github.com/user-attachments/assets/a1bcd57f-ef46-41a2-91cf-8e7899445636" />
+<img width="300" height="420" alt="WhatsApp Image 2026-05-19 at 10 35 24 PM (1)" src="https://github.com/user-attachments/assets/56475955-2066-4f30-ab02-e1115ef7e1b3" />
 
 ---
 ---
